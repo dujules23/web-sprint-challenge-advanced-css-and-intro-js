@@ -266,10 +266,17 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(artists, index) {
+    for (let i = 0; i < artists.length; i++){
+      if (artists[index] === 0)
+      {
+        artists.splice(i, 1)
+      }
+      return artists.length - 1
+    }
+      
 }
-   
+
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
